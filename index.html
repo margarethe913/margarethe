@@ -196,7 +196,7 @@ for (i = 0; i < coll.length; i++) {
     </div>
     
     <p>Lets get in touch. Send me a message:</p>
-    <form id="fcf-form-id" class="fcf-form-class" method="POST" action="/?index contact-form-process.php">
+    <Form id="fcf-form-id" class="fcf-form-class" method="POST" action="contact-form-process.php">
             <label for="Name" class="fcf-label">Your name</label>
             <div class="fcf-input-group">
                 <input type="text" id="Name" name="Name" class="fcf-form-control" required>
@@ -216,7 +216,7 @@ for (i = 0; i < coll.length; i++) {
             <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
         </div>
       </p>
-    </form>
+    </Form>
   
   
 <!-- END PAGE CONTENT -->
@@ -224,6 +224,7 @@ for (i = 0; i < coll.length; i++) {
 
 <script>
 // Open and close sidebar
+import { Form } from "@remix-run/react";
 function openNav() {
   document.getElementById("mySidebar").style.width = "60%";
   document.getElementById("mySidebar").style.display = "block";
