@@ -137,6 +137,16 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+// Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
 </script>
 
   <!-- End About Section -->
@@ -221,19 +231,6 @@ for (i = 0; i < coll.length; i++) {
   
 <!-- END PAGE CONTENT -->
 </div>
-
-<script>
-// Open and close sidebar
-import { form } from "@remix-run/react";
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
 
 </body>
 </html>
