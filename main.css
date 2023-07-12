@@ -1,5 +1,4 @@
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .bgimg {
   background-position: center;
   background-repeat: no-repeat;
@@ -7,8 +6,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-image: url('margaret.jpg');
   min-height: 100%;
 }
-.container {
+  .container {
     position: relative;
+    border: 1px solid #7D82B8;
+    margin: 2px;
   }
 
   .image {
@@ -16,6 +17,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     width: 100%;
     height: auto;
   }
+  
   .text {
     color: white;
     font-size: 20px;
