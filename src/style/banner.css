@@ -1,0 +1,150 @@
+/* Banner */
+
+
+#banner {
+    display: flex; /* Horizontal layout */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  #banner .image {
+    flex: 0.5; /* Take up the left side */
+    opacity: 0.95;
+    background-image: url('../assets/headshot.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #banner .inner {
+    flex: 1; /* Take up the right side */
+    background: linear-gradient(135deg, #3d405b, #3d405b); /* Gradient background */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+  }
+
+    #banner .inner {
+        margin: 0 auto;
+        width: 55em;
+        opacity: 1;
+        position: relative;
+        color: white;
+    }
+
+    #banner h2 {
+        opacity: 0;
+        transform: translateX(-50px);
+        filter: blur(5px);
+        transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+        border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+        font-size: 2.25em;
+        margin-bottom: 0.8em;
+        padding-bottom: 0.4em;
+        text-transform: uppercase;
+      }
+      
+      #banner h2.active { /* or :hover for testing */
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+      }
+
+      #banner p {
+        opacity: 0;
+        transform: translateX(-50px);
+        filter: blur(5px);
+        transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+        transition-delay: 0.8s;
+        font-family: Raleway, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: 200;
+        letter-spacing: 0.1em;
+        line-height: 2;
+        text-transform: uppercase;
+      }
+      
+      #banner p.active { /* or :hover for testing */
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+      }
+      
+    @media screen and (max-width: 1280px) {
+
+        #banner {
+            padding: 7em 0 8.25em 0 ;
+            background-color: #2e3141;
+            background-image: linear-gradient(135deg, #3d405b, #3d405b); /* Gradient background */
+            background-size: auto,
+cover;
+            background-position: center,
+center;
+            margin-bottom: -6.5em;
+        }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        #banner {
+            padding: 12em 3em 12.375em 3em ;
+            margin-bottom: -4.75em;
+        }
+
+            #banner .inner {
+                width: 100%;
+            }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #banner {
+            padding: 5em 2em 4.25em 2em ;
+            margin-bottom: -2.5em;
+        }
+
+            #banner .logo {
+                margin: 0 0 1em 0;
+            }
+
+                #banner .logo .icon {
+                    font-size: 1.5em;
+                }
+
+            #banner h2 {
+                font-size: 1.5em;
+            }
+
+            #banner p {
+                font-size: 0.8em;
+            }
+
+    }
+
+    body.is-preload #banner h2 {
+        opacity: 0;
+        -moz-transform: translateX(0.25em);
+        -webkit-transform: translateX(0.25em);
+        -ms-transform: translateX(0.25em);
+        transform: translateX(0.25em);
+        -moz-filter: blur(2px);
+        -webkit-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: blur(2px);
+    }
+
+    body.is-preload #banner p {
+        opacity: 0;
+        -moz-transform: translateX(0.5em);
+        -webkit-transform: translateX(0.5em);
+        -ms-transform: translateX(0.5em);
+        transform: translateX(0.5em);
+        -moz-filter: blur(2px);
+        -webkit-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: blur(2px);
+    }

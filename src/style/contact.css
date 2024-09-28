@@ -1,0 +1,56 @@
+#contact {
+    padding: 100px 20px 20px 20px; /* Adds space at the top to push the form down */
+    margin: 0 auto;
+    max-width: 600px; /* Limit the width of the form for readability */
+}
+
+#contact h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1.5em; /* Space below the heading */
+    color: #333; /* Text color */
+}
+
+#contact label.fcf-label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #fdfdfd;
+}
+
+.fcf-input-group {
+    margin-bottom: 1.5em;
+}
+
+.fcf-form-control {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+textarea.fcf-form-control {
+    resize: vertical;
+}
+
+button.fcf-btn {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #4c5c96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centers text inside the button */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+button.fcf-btn:hover {
+    background-color: #53639e;
+}
