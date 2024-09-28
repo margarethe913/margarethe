@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/margarethe/static/css/main.d8137b16.css",
-    "main.js": "/margarethe/static/js/main.55d3deb4.js",
-    "static/js/453.96cba20d.chunk.js": "/margarethe/static/js/453.96cba20d.chunk.js",
-    "static/media/lucyslistings.jpg": "/margarethe/static/media/lucyslistings.7134563b9e7285bce635.jpg",
-    "static/media/headshot.jpg": "/margarethe/static/media/headshot.f5ae913abfa7af1e9fa4.jpg",
-    "static/media/repark.jpg": "/margarethe/static/media/repark.81f27b83a4b033942e80.jpg",
-    "static/media/dlt.png": "/margarethe/static/media/dlt.966a2e62f93d85d0a07b.png",
-    "index.html": "/margarethe/index.html",
-    "main.d8137b16.css.map": "/margarethe/static/css/main.d8137b16.css.map",
-    "main.55d3deb4.js.map": "/margarethe/static/js/main.55d3deb4.js.map",
-    "453.96cba20d.chunk.js.map": "/margarethe/static/js/453.96cba20d.chunk.js.map"
+    "main.css": "/static/css/main.3eb9fb05.css",
+    "main.js": "/static/js/main.0eb07365.js",
+    "static/js/453.96cba20d.chunk.js": "/static/js/453.96cba20d.chunk.js",
+    "static/media/lucyslistings.jpg": "/static/media/lucyslistings.7134563b9e7285bce635.jpg",
+    "static/media/headshot.jpg": "/static/media/headshot.f5ae913abfa7af1e9fa4.jpg",
+    "static/media/repark.jpg": "/static/media/repark.81f27b83a4b033942e80.jpg",
+    "static/media/dlt.png": "/static/media/dlt.966a2e62f93d85d0a07b.png",
+    "index.html": "/index.html",
+    "main.3eb9fb05.css.map": "/static/css/main.3eb9fb05.css.map",
+    "main.0eb07365.js.map": "/static/js/main.0eb07365.js.map",
+    "453.96cba20d.chunk.js.map": "/static/js/453.96cba20d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8137b16.css",
-    "static/js/main.55d3deb4.js"
+    "static/css/main.3eb9fb05.css",
+    "static/js/main.0eb07365.js"
   ]
 }
