@@ -1,0 +1,115 @@
+/* Popup container */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10001; /* Makes sure the popup appears above everything else */
+}
+
+/* Popup inner content */
+.popup-inner {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px; /* Width of the popup */
+  max-width: 90%;
+  max-height: 80vh; /* Limits height to 80% of the viewport */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: left; /* Align text to left for better readability */
+  position: relative; /* Allow absolute positioning for the close button */
+}
+
+/* Close button styling */
+.close-button {
+  background-color: rgb(226, 82, 82); /* No background */
+  color: #999; /* Color of the close button */
+  border: none; /* Remove default border */
+  font-size: 20px; /* Smaller font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: absolute; /* Position it in the corner */
+  right: 10px; /* Align to the right */
+  top: 10px; /* Align to the top */
+  line-height: 1; /* Reduce line height for less vertical space */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+  width: 30px; /* Set width */
+  height: 30px; /* Set height */
+  border-radius: 50%; /* Make it round */
+  display: flex; /* Center the content */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+
+}
+.close-button:hover {
+  background-color: rgb(216, 40, 40); /* No background */
+  color: #999; /* Color of the close button */
+  border: none; /* Remove default border */
+  font-size: 18px; /* Smaller font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: absolute; /* Position it in the corner */
+  right: 10px; /* Align to the right */
+  top: 10px; /* Align to the top */
+  line-height: 1; /* Reduce line height for less vertical space */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+
+}
+
+
+/* Collapsible button styling */
+.collapsible {
+  background-color: #4c5f6b; /* Button background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: none; /* Remove border */
+  padding: 10px; /* Padding */
+  width: 100%; /* Full width */
+  text-align: left; /* Align text to left */
+  outline: none; /* Remove outline */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.collapsible.active, .collapsible:hover {
+  background-color: #005582; /* Darker blue on hover or when active */
+}
+
+/* Collapsible content */
+.popup-content {
+  display: none; /* Initially hidden */
+  background-color: #e5e5e5;  /* Light background color */
+  padding: 20px;               /* Adds space inside the box */
+  border-radius: 8px;           /* Rounds the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow */
+  margin: 10px 0;               /* Adds space around the content */
+  transition: all 0.3s ease;    /* Smooth transition for display */
+}
+
+/* Styling for the content inside the collapsible */
+.popup-content h4 {
+  margin-top: 0;                /* Removes the default margin at the top */
+  color: #333;                  /* Darker text color for headings */
+}
+
+.popup-content ul {
+  list-style: inside disc;      /* Custom list styling */
+  margin: 5px 0;
+  padding: 0;
+}
+
+.popup-content li {
+  margin-bottom: 8px;
+  color: #555;                  /* Slightly lighter text for list items */
+}
+
+/* Show content when active */
+.collapsible.active + .popup-content {
+  display: block; /* Show content when active */
+}
