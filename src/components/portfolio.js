@@ -27,7 +27,7 @@ function Portfolio() {
                         <a href="https://drive.google.com/drive/folders/1CvqR0yzv9DMbbKvfcXAieH05yxn0jqKC" class="special">Learn more</a>
                     </article>
                 </section>
-                    <a href="/portfolio#portfolio" class="button">Browse All</a>
+                    <a href="/margarethe/portfolio" class="button">Browse All</a>
             </div>
             </div>
         </section>

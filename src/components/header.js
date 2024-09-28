@@ -10,9 +10,9 @@ function Header() {
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <nav>
-            <a href="/#about">About</a>
-            <a href="/portfolio#portfolio">Portfolio</a>
-            <a href="/contact#contact">Contact</a>
+            <a href="/margarethe/#about">About</a>
+            <a href="/margarethe/portfolio">Portfolio</a>
+            <a href="/margarethe/contact#contact">Contact</a>
 		</nav>
 	</div>
   );
