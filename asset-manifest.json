@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/margarethe/static/css/main.ea7b7d1b.css",
+    "main.css": "/margarethe/static/css/main.d9978c62.css",
     "main.js": "/margarethe/static/js/main.254307a4.js",
     "static/js/453.96cba20d.chunk.js": "/margarethe/static/js/453.96cba20d.chunk.js",
     "static/media/lucyslistings.jpg": "/margarethe/static/media/lucyslistings.7134563b9e7285bce635.jpg",
@@ -8,12 +8,12 @@
     "static/media/repark.jpg": "/margarethe/static/media/repark.81f27b83a4b033942e80.jpg",
     "static/media/dlt.png": "/margarethe/static/media/dlt.966a2e62f93d85d0a07b.png",
     "index.html": "/margarethe/index.html",
-    "main.ea7b7d1b.css.map": "/margarethe/static/css/main.ea7b7d1b.css.map",
+    "main.d9978c62.css.map": "/margarethe/static/css/main.d9978c62.css.map",
     "main.254307a4.js.map": "/margarethe/static/js/main.254307a4.js.map",
     "453.96cba20d.chunk.js.map": "/margarethe/static/js/453.96cba20d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea7b7d1b.css",
+    "static/css/main.d9978c62.css",
     "static/js/main.254307a4.js"
   ]
 }
