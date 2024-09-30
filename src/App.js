@@ -2,16 +2,16 @@ import './style/App.css';
 import Home from './home'
 import Portfolio from './portfolio-page'
 import Contact from './contact'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
-    <Router basename="/">
+    <Router baseline='/' >
       <Routes>
-        <Route path="/margarethe" element={<Home />} />
-        <Route exact path="/margarethe/portfolio" element={<Portfolio />} />
-        <Route exact path="/margarethe/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route exact path="/portfolio" element={<Portfolio />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
