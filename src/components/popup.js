@@ -14,7 +14,6 @@ function Popup({ onClose }) {
     return (
         <div className="popup">
             <div className="popup-inner">
-                <h3>Coursework</h3>
                  <button className="close-button" onClick={onClose}>
                     &times; 
                 </button>
@@ -104,6 +103,31 @@ function Popup({ onClose }) {
                                     <li>05317: Design of AI Products</li>
                                     <li>02261: Quantitative Cell & Molecular Biology Laboratory</li>
                                     <li>33120: Science & Science Fiction</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                )}
+                <button className={`collapsible ${openYear === 'senior' ? 'active' : ''}`} onClick={() => toggleYear('senior')}>
+                    Senior Year
+                </button>
+                {openYear === 'senior' && (
+                    <div className="popup-content">
+                        <ol>
+                            <li>
+                                <h4>Fall 2024 (GPA: 4.0)</h4>
+                                <ul>
+                                    <li>15440: Distributed Systems</li>
+                                    <li>17313: Foundations of Software Engineering</li>
+                                    <li>05360: Interaction Design</li>
+                                    <li>82333: Modern China</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Spring 2025 (GPA: 4.0)</h4>
+                                <ul>
+                                    <li>15319: Cloud Computing</li>
+                                    <li>10423: Generative AI</li>
                                 </ul>
                             </li>
                         </ol>
