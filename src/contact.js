@@ -7,7 +7,7 @@ function Contact() {
     <>
     <Header />
     <section id="contact">
-    <h1>Lets get in touch. Send me a message:</h1>
+    <h1>Get in touch! Send me a message: </h1>
     <form action="https://formspree.io/f/xbjebzew" method="POST">
             <label for="Name" class="fcf-label">Your name</label>
             <div class="fcf-input-group">

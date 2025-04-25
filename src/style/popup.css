@@ -1,115 +1,116 @@
 /* Popup container */
 .popup {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Slightly softer background */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10001; /* Makes sure the popup appears above everything else */
+  z-index: 10001;
+  padding: 20px;
 }
 
-/* Popup inner content */
+/* Inner box */
 .popup-inner {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  width: 400px; /* Width of the popup */
-  max-width: 90%;
-  max-height: 80vh; /* Limits height to 80% of the viewport */
-  overflow-y: auto; /* Allows scrolling if content overflows */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  text-align: left; /* Align text to left for better readability */
-  position: relative; /* Allow absolute positioning for the close button */
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  font-family: 'Inter', sans-serif;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Close button styling */
+/* Close button */
 .close-button {
-  background-color: rgb(226, 82, 82); /* No background */
-  color: #999; /* Color of the close button */
-  border: none; /* Remove default border */
-  font-size: 20px; /* Smaller font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  position: absolute; /* Position it in the corner */
-  right: 10px; /* Align to the right */
-  top: 10px; /* Align to the top */
-  line-height: 1; /* Reduce line height for less vertical space */
-  padding: 0; /* Remove any padding */
-  margin: 0; /* Remove any margin */
-  width: 30px; /* Set width */
-  height: 30px; /* Set height */
-  border-radius: 50%; /* Make it round */
-  display: flex; /* Center the content */
-  justify-content: center; /* Center text horizontally */
-  align-items: center; /* Center text vertically */
-
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-color: transparent;
+  color: #555;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .close-button:hover {
-  background-color: rgb(216, 40, 40); /* No background */
-  color: #999; /* Color of the close button */
-  border: none; /* Remove default border */
-  font-size: 18px; /* Smaller font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  position: absolute; /* Position it in the corner */
-  right: 10px; /* Align to the right */
-  top: 10px; /* Align to the top */
-  line-height: 1; /* Reduce line height for less vertical space */
-  padding: 0; /* Remove any padding */
-  margin: 0; /* Remove any margin */
-
+  background-color: #eee;
 }
 
-
-/* Collapsible button styling */
+/* Collapsible buttons */
 .collapsible {
-  background-color: #4c5f6b; /* Button background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Pointer cursor on hover */
-  border: none; /* Remove border */
-  padding: 10px; /* Padding */
-  width: 100%; /* Full width */
-  text-align: left; /* Align text to left */
-  outline: none; /* Remove outline */
-  font-size: 16px; /* Font size */
-  transition: background-color 0.3s; /* Smooth background color change */
+  background-color: #1e293b;
+  color: #fff;
+  margin-top: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
 }
 
-.collapsible.active, .collapsible:hover {
-  background-color: #005582; /* Darker blue on hover or when active */
+.collapsible:hover,
+.collapsible.active {
+  background-color: #0f172a;
 }
 
 /* Collapsible content */
 .popup-content {
-  display: none; /* Initially hidden */
-  background-color: #e5e5e5;  /* Light background color */
-  padding: 20px;               /* Adds space inside the box */
-  border-radius: 8px;           /* Rounds the corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow */
-  margin: 10px 0;               /* Adds space around the content */
-  transition: all 0.3s ease;    /* Smooth transition for display */
+  display: none;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #334155;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Styling for the content inside the collapsible */
+.collapsible.active + .popup-content {
+  display: block;
+}
+
+/* Section headers */
 .popup-content h4 {
-  margin-top: 0;                /* Removes the default margin at the top */
-  color: #333;                  /* Darker text color for headings */
+  margin-top: 0;
+  color: #0f172a;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
+/* List styles */
 .popup-content ul {
-  list-style: inside disc;      /* Custom list styling */
-  margin: 5px 0;
-  padding: 0;
+  list-style: disc inside;
+  padding-left: 16px;
+  margin: 0;
 }
 
 .popup-content li {
   margin-bottom: 8px;
-  color: #555;                  /* Slightly lighter text for list items */
 }
 
-/* Show content when active */
-.collapsible.active + .popup-content {
-  display: block; /* Show content when active */
+/* Entry animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
